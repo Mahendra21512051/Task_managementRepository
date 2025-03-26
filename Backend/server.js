@@ -14,7 +14,9 @@ connectDB();
 
 app.use(cors());
 app.use(express.json());
-
+app.get('/',(req,res)=>{
+  res.send("this is server page");
+})
 // Routes
 app.use("/clustertaskmanagment/shareTaskmanegment", shareTaskRoutes); 
 app.use("/clustertaskmanagment/connectionmanegment", connectionRoutes);
