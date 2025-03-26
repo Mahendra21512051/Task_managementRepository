@@ -21,9 +21,6 @@ app.use("/clustertaskmanagment/connectionmanegment", connectionRoutes);
 app.use("/clustertaskmanagment/categorymanegment", categoryRoutes);
 app.use("/clustertaskmanagment/taskmanegment", taskRoutes);
 app.use("/clustertaskmanagment", authRoutes);
-app.get('/',(req,res)=>{
-  res.send("this is server page");
-})
 
 const PORT = process.env.PORT || 5001;
 app.listen(PORT, () => console.log(`Server is running on port ${PORT}`));
